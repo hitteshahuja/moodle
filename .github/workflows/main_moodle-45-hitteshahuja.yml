@@ -64,9 +64,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_C10C12C4AA424F1BBE6D9A443CE68022 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_61ACC0AFF1F5494CBC53B1E90F3C3400 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_714A1E79C66649A9A741ACDD45B070D2 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_ADCF0CD02E974074AF251E6F37FFB363 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_03D9367F7EB044FB854DBFDB43520A5E }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_8BF462FE8F2D4B94B88B29355B251E69 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -74,5 +74,5 @@ jobs:
         with:
           app-name: 'moodle-45-hitteshahuja'
           slot-name: 'Production'
-          package: ./release.zip
+          package: .
           
