@@ -74,5 +74,5 @@ jobs:
         with:
           app-name: 'moodle-45-hitteshahuja'
           slot-name: 'Production'
-          package: .
+          package: ./release.zip
           
